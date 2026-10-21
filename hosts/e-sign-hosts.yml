@@ -1,0 +1,87 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 3
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - support
+  - website
+hosts:
+- host: api.co.uk
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.co.uk
+  role: api
+  relation: other-domain
+- host: api.e-sign.co.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: e-sign.co.uk
+  role: api
+  relation: own
+- host: app.e-sign.co.uk
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: e-sign.co.uk
+  role: other
+  relation: own
+- host: e-sign.co.uk
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: e-sign.co.uk
+  role: website
+  relation: own
+- host: support.esign.co.uk
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: esign.co.uk
+  role: support
+  relation: other-domain
+- host: www.esign.co.uk
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - SignUp
+  - Security
+  - Pricing
+  - Support
+  serves: []
+  registrable_domain: esign.co.uk
+  role: identity
+  relation: other-domain

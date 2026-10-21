@@ -1,0 +1,8 @@
+generated: "2026-10-20"
+method: derived
+source: https://www.esign.co.uk
+type: MCPServer
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived

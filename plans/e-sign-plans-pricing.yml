@@ -1,0 +1,58 @@
+generated: '2026-10-20'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.esign.co.uk/pricing/
+sources:
+- https://www.esign.co.uk/pricing/
+name: E-Sign pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Personal
+  price_text: £10 per user
+  price: 10
+  billing_period: monthly
+  features:
+  - Send 5 envelopes per month for signature
+  - eIDAS-compliant Advanced eSignatures (AeS)
+  - Secure storage for all agreements
+  - Faster completion with basic workflow automations
+- name: Standard
+  price_text: £32 per user
+  price: 32
+  billing_period: monthly
+  features:
+  - All Personal benefits
+  - Send 50 envelopes per month for signature
+  - Collect eSignatures and payments in one flow
+  - Standardise signing with reusable templates
+  - Verify signers by SMS
+  - Use your own branding
+- name: Business
+  price_text: £50 per user
+  price: 50
+  billing_period: monthly
+  features:
+  - All Standard benefits
+  - Send 75 envelopes per month for signature
+  - Verify document integrity with electronic seals
+  - Password-protect sensitive documents
+  - Control access with role-based permissions
+- name: Enterprise
+  price_text: Contact sales
+  features:
+  - All Business benefits
+  - Annual envelope limits, no monthly caps
+  - Unlimited users
+  - Integrate with the tools you already use
+  - Send in bulk for high-volume workloads
+  - Cut delays with remote, EU-compliant witnessing
+  - Hosted web forms
+  - Fully automate signing flows with custom fields
+  - Centralised management
+  - Single sign-on (SSO)
+  - Secure and government approved
+  limits:
+  - name: pricing_basis
+    limit_text: Negotiated
+docs: https://www.esign.co.uk/pricing/
